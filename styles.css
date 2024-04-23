@@ -1,0 +1,673 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: border-box;
+}
+body {
+  background-color: rgb(58, 128, 128, 0.5);
+  background-image: url("https://media.istockphoto.com/id/1148898071/vector/abstract-blurred-holographic-gradient-background-modern-minimal-design.jpg?s=612x612&w=0&k=20&c=2yYqCCTvKJD1pcyW0WRYEpzjoUPaEPz3_4Op1Shv5Uc=");
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+}
+.navbar {
+  display: flex;
+  position: fixed;
+  background-color: rgba(19, 5, 5);
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  z-index: 1;
+}
+.border {
+  border: 2px solid transparent;
+}
+.border:hover {
+  transform: scale(1.5);
+  color: #4caf50;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.punjtara-logo {
+  display: flex;
+  justify-content: center;
+}
+#logo {
+  width: 150%;
+  height: 60px;
+}
+.Home-option {
+  display: flex;
+  justify-content: center;
+}
+.Booking-option,
+.Gallary-option,
+.About-option {
+  display: flex;
+}
+.Search-option {
+  display: flex;
+  width: 300px;
+  height: 35px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  text-align: center;
+  font-size: 1.3rem;
+  letter-spacing: 0.4rem;
+}
+.input-option {
+  width: 400px;
+  text-align: center;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.input-option:hover {
+  border: 2px solid orange;
+}
+.search-icon {
+  display: flex;
+  margin-top: 1px;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+  width: 50px;
+  height: 33px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.Homehero-section img {
+    width: 100%;
+    height: auto;
+    box-shadow:5px 5px 5px 5px rgb(28, 31, 28);
+}
+
+.Homecontent-section {
+    padding: 20px;
+}
+
+.Homeimage-text-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.Homeimage-text-container.reverse {
+    flex-direction: row-reverse;
+}
+
+.Homeleft-image,
+.Homeright-image {
+    flex: 1;
+}
+
+.Homeleft-image img,
+.Homeright-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    box-shadow:5px 5px 5px 5px rgb(28, 31, 28);
+}
+
+.Homeright-text,
+.Homeleft-text {
+    flex: 1;
+    padding: 0 20px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(2, 7, 1,0.7);
+    text-shadow: 5px 5px 5px rgba(5, 8, 8, 0.2);
+}
+
+.Homeadditional-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer {
+  background-color: rgba(19, 5, 5);
+  display: flex;
+  height: 40px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+/* css for single.html */
+#single-body {
+  font-family: "Poppins", sans-serif;
+  background-color: #bcca89;
+}
+
+.single-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.single-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.single-wrapper h1 {
+  margin: 20px auto;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(51, 51, 51);
+  /* color: #333333; */
+}
+.single-wrapper h1:hover {
+  transition-property: all;
+  transform: scale(1.3);
+  color: rgb(20, 47, 220);
+}
+
+.single-card {
+  width: 32%;
+  overflow: hidden;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-card img {
+  height: 100%;
+  width: 100%;
+  filter: grayscale(100%);
+  object-fit: cover;
+}
+
+.single-card:hover {
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 10px #333);
+}
+
+.single-card:hover img {
+  filter: grayscale(0);
+}
+
+.single-card figcaption {
+  position: absolute;
+  bottom: 0;
+  width: fit-content;
+  height: 16%;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  color: #fff;
+  padding: 25px;
+  opacity: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.single-card:hover figcaption {
+  opacity: 1;
+  bottom: 40%;
+  transform: translateY(-50%) rotate(360deg);
+  transition: 1s;
+}
+/* Login Page Css*/
+#loginpage {
+  font-family: Arial, sans-serif;
+  background-image: url("/images/home-background.png");
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logincontainer {
+  background-color: rgb(242, 240, 235, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(195, 179, 179, 0.1);
+  width: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+}
+
+#loginh2 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.9px;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
+#logininput {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#loginsubmitbutton {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .logincontainer {
+    width: 80%;
+  }
+  #loginh2 {
+    font-size: 24px;
+  }
+}
+
+#signup-page-loginoption {
+  color: black;
+  display: inline;
+}
+#signup-page-loginoption {
+  color: blue;
+}
+/* styles for Booking Form Page */
+#Booking-form-Body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+}
+#BookingForm {
+  background-image: url("images/home-background.png");
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.BookingForm-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#BookingForm-Heading {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.BookingForm-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+.BookingForm-container input[type="text"],
+.BookingForm-container input[type="email"],
+.BookingForm-container input[type="date"],
+.BookingForm-container input[type="submit"] {
+  background-color: rgb(255, 205, 205,0.3);
+  color: black;
+  padding: 12px 100px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.BookingForm-container input[type="date"]{
+  width:45%;
+}
+.BookingForm-container input[type="submit"]:hover {
+  background-color: #45a049;
+}
+.BookingForm-sel{
+  height: 2rem;
+  border: none;
+  width: 32%;
+}
+.Submit-button-booking{
+  height: 2.2rem;
+  padding-top: 10px;
+}
+
+/* CSS FOR GALLARY PAGE */
+#Gallary-wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.Gallaryproject-section {
+  background-image: url("https://media.istockphoto.com/id/1148898071/vector/abstract-blurred-holographic-gradient-background-modern-minimal-design.jpg?s=612x612&w=0&k=20&c=2yYqCCTvKJD1pcyW0WRYEpzjoUPaEPz3_4Op1Shv5Uc=");
+  background-size: cover;
+}
+
+.Gallarypage-header {
+  color: var(--bgOrange);
+  font-size: 90px;
+  text-align: center;
+  padding-top: 60px;
+}
+.Gallarypage-header:hover {
+  transform: scale(1.2);
+  color: #1629f4;
+}
+.Gallaryproject-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.Gallaryproject-card {
+  width: 90%;
+  height: 550px;
+  background-image: url(./images/dinner.jpg);
+  background-size: cover;
+  /*background-repeat: no-repeat;*/
+  position: relative;
+  box-shadow: 0px 0px 40px #1f1f1f;
+}
+
+.Gallaryproject-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 0;
+  /*transform: scaleX(1);*/
+}
+
+.Gallaryproject-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.4s;
+  z-index: 0;
+}
+
+.Gallaryproject-card:hover::before {
+  transform: scaleX(1);
+}
+
+.Gallaryproject-number {
+  position: absolute;
+  font-size: 200px;
+  font-weight: 600;
+  color: white;
+  z-index: 10;
+  /*display: none;*/
+  opacity: 0;
+}
+
+.Gallaryproject-card:hover .project-number {
+  /*display: block;*/
+  opacity: 1;
+}
+
+.Gallaryproject-number-right {
+  right: -40px;
+  top: -45px;
+}
+
+.Gallaryproject-number-left {
+  left: -40px;
+  top: -45px;
+}
+
+.Gallaryproject-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 2em;
+  bottom: 20%;
+  z-index: 5;
+  gap: 1em;
+  transition: all 0.4s;
+}
+
+.Gallaryproject-content-left {
+  left: 10%;
+  z-index: 0;
+}
+
+.Gallaryproject-content-right {
+  right: 10%;
+  z-index: 0;
+}
+
+.Gallaryproject-skill {
+  width: 40px;
+}
+
+.Gallaryproject-heading {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 3rem;
+}
+
+.Gallaryproject-subHeading {
+  width: 70%;
+  font-size: 16px;
+  font-style: italic;
+  z-index: 0;
+}
+
+.Gallaryproject-card:hover .Gallaryproject-content {
+  transform: scale(1.1);
+}
+
+#Gallaryproject1 {
+  background-image: url("https://www.hoteleventi.com/images/1700-960/eventi-social-events-2-d8afeca9.jpg");
+}
+#Gallaryproject2 {
+  margin-left: 120px;
+  background-image: url("https://www.hoteleventi.com/images/1700-960/evt-ex-032-ad7056c4.jpg");
+}
+#Gallaryproject3 {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/024/603/806/non_2x/rock-music-concert-background-illustration-ai-generative-free-photo.jpg");
+}
+#Gallaryproject4 {
+  margin-left: 120px;
+  background-image: url("https://cdn.5280.com/2018/01/Daybreaker_Juliana-Bernstein-Get-Tiny-960x641.jpg");
+}
+#Gallaryproject5 {
+  background-image: url(./images/dinner.jpg);
+}
+#Gallaryproject6 {
+  margin-left: 120px;
+  background-image: url(./images/ciudad-maderas-MXbM1NrRqtI-unsplash.jpg);
+}
+#Gallaryproject7 {
+  background-image: url(./images/home-background.png);
+}
+#Gallaryproject8 {
+  margin-left: 120px;
+  background-image: url("https://media.istockphoto.com/id/903417402/photo/luxury-construction-hotel-with-swimming-pool-at-sunset.jpg?s=612x612&w=0&k=20&c=NyPC_c-wE3W_CImA4t57FpyGy6f428CYROd80jxVC4A=");
+}
+#Gallaryproject9 {
+  background-image: url("https://entrepreneurship.babson.edu/wp-content/uploads/2020/10/Movie-1200-630.jpg");
+}
+#Gallaryproject10 {
+  margin-left: 120px;
+  background-image: url("https://kashpatelproductions.com/wp-content/uploads/2022/09/AR-Rahman-Live-In-Concert-Bollywood-US-Tour-2022-0006.jpg");
+}
+#Gallaryproject11 {
+  background-image: url("https://imgmedia.lbb.in/media/2020/01/5e14c1647600f0383da99d3e_1578418532401.jpg");
+}
+
+@media (max-width: 1300px) {
+  .Gallarypage-header {
+    padding-top: 30px;
+    color: var(--bgOrange);
+    text-align: center;
+    font-size: 40px;
+  }
+  .Gallaryproject-container {
+    padding: 5px;
+    margin: 10px;
+    gap: 60px;
+  }
+  .Gallaryproject-card {
+    width: 100%;
+    height: 300px;
+  }
+  .Gallaryproject-card {
+    background-size: cover;
+    background-position: center;
+  }
+  .Gallaryproject-content {
+    scale: 0.5;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  .Gallaryproject-content-left {
+    left: 0;
+  }
+  .Gallaryproject-heading {
+    font-size: 40px;
+    width: 100%;
+  }
+  .Gallaryproject-sub-heading {
+    width: 100%;
+  }
+  #Gallaryproject2 {
+    margin-left: 0;
+  }
+  #Gallaryproject4 {
+    margin-left: 0;
+  }
+  .Gallaryproject-card:hover .Gallaryproject-number {
+    display: none;
+  }
+  .Gallaryproject-card:hover .Gallaryproject-content {
+    scale: 0.55;
+  }
+}
+
+/* CSS FOR HOTEL-SERVICES PAGE */
+
+.Hotel-services {
+  padding: 20px;
+  padding-top: 80px;
+  text-align: center;
+  color: #4a57e4;
+}
+.Hotelservice {
+  margin-bottom: 80px;
+  margin-top: 30px;
+}
+.Hotel-images {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.Hotel-images img {
+  width: 300px;
+  height: auto;
+  margin: 0 15px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Hotel-images img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.Hotelservice-content {
+  text-align: center;
+}
+
+.Hotelservice h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.Hotelservice h2:hover {
+  transform: scale(1.2);
+}
+
+.Hotelservice p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* CSS FOR CONTACT PAGE */
+.about-contact{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 40px;
+  margin-top: 40px;
+  text-decoration: underline;
+  color: rgb(16, 7, 7,0.7);
+}
+.contact-main-heading:hover{
+  transform: scale(1.3);
+}
+.contact-details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  width: 100%;
+}
+.contact-list{
+  width: 40%;
+  height: 200px;
+  border:2px solid #1f1f1f;
+  text-decoration: solid;
+  text-align: center;
+  /* border: 2px solid black; */
+  margin-left: 4rem;
+  letter-spacing: 0.2rem;
+  line-gap-override: 0.4rem;
+}
+.contact-heading{
+  color: blue;
+  margin-bottom: 4px;
+  margin-top: 10px;
+}
